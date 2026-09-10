@@ -1432,30 +1432,38 @@ function tampilkanEvaluasiBeranda() {
 
     pieCharts.forEach(function(pie) {
 
+        // Nilai saat ini
+        const nilai = 100;
+
+        // Ubah nilai persen menjadi sudut lingkaran
+        const sudut = nilai * 3.6;
+
+
+        // Membuat pie chart
         pie.style.background =
             "conic-gradient(" +
-            "var(--biru) 0deg 360deg," +
-            "#e8eef5 360deg 360deg" +
+            "var(--biru) 0deg " + sudut + "deg," +
+            "#e8eef5 " + sudut + "deg 360deg" +
             ")";
 
 
+        // Ambil angka di tengah pie
         const angka =
             pie.querySelector(
-                ".evaluasi-pie-value"
+                ".evaluasi-pie-center strong"
             );
 
 
         if (angka) {
 
             angka.textContent =
-                "100%";
+                nilai + "%";
 
         }
 
     });
 
 }
-
 
 /* =========================================================
    28. EVENT TAHUN
