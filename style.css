@@ -715,37 +715,48 @@ body{
 }
 
 .evaluasi-pie{
-    width:160px;
-    height:160px;
+    width:160px !important;
+    height:160px !important;
 
-    border-radius:50%;
+    min-width:160px;
+    min-height:160px;
+
+    border-radius:50% !important;
 
     background:conic-gradient(
-        var(--biru) 0deg 360deg,
-        #e8eef5 360deg 360deg
-    );
+        var(--biru) 0deg 360deg
+    ) !important;
 
-    display:flex;
+    display:flex !important;
     align-items:center;
     justify-content:center;
+
+    flex-shrink:0;
+
+    box-sizing:border-box;
 }
 
 
 /* LINGKARAN TENGAH */
 
-.evaluasi-pie-center{
-    width:110px;
-    height:110px;
+..evaluasi-pie-center{
+    width:110px !important;
+    height:110px !important;
+
+    min-width:110px;
+    min-height:110px;
 
     border-radius:50%;
+
     background:#ffffff;
 
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-}
 
+    box-sizing:border-box;
+}
 .evaluasi-pie-center strong{
     color:var(--biru-tua);
     font-size:25px;
