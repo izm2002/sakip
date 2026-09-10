@@ -162,7 +162,7 @@ body{
 .menu-nav{
     position:fixed;
     left:0;
-    top:120px; /* sesuaikan dengan tinggi header */
+    top:200px; /* sesuaikan dengan tinggi header */
 
     width:230px;
     height:calc(100vh - 120px);
