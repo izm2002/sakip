@@ -162,10 +162,9 @@ body{
 .menu-nav{
     position:fixed;
     left:0;
-    top:250px; /* sesuaikan dengan tinggi header */
-
+    top:90px;
     width:230px;
-    height:calc(100vh - 120px);
+    height:calc(100vh - 90px);
 
     padding:25px 15px;
     box-sizing:border-box;
@@ -175,15 +174,19 @@ body{
 
     display:flex;
     flex-direction:column;
+    gap:8px;
 
     z-index:1000;
 }
-/* Tombol menu */
 
+
+/* TOMBOL MENU */
 .menu-btn{
+    display:block;
     width:100%;
+
     padding:14px 16px;
-    margin-bottom:8px;
+    margin:0;
 
     border:none;
     border-radius:10px;
@@ -192,23 +195,41 @@ body{
     color:#243447;
 
     text-align:left;
+    font-family:Arial, sans-serif;
     font-size:15px;
     font-weight:600;
 
     cursor:pointer;
-    transition:0.2s;
+    transition:background 0.2s ease, color 0.2s ease;
 }
 
+
+/* SAAT MOUSE DIARAHKAN */
 .menu-btn:hover{
     background:#e8f2fb;
     color:#2166a5;
 }
 
+
+/* MENU YANG SEDANG AKTIF */
 .menu-btn.active{
-    background:#2166a5;
-    color:#ffffff;
+    background:#2166a5 !important;
+    color:#ffffff !important;
 }
 
+
+/* MENU YANG TIDAK AKTIF */
+.menu-btn:not(.active){
+    background:transparent;
+    color:#243447;
+}
+.menu-content{
+    display:none;
+}
+
+.menu-content.active{
+    display:block;
+}
 
 /* =====================================
    JUDUL SECTION
