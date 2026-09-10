@@ -148,12 +148,13 @@ body{
 ===================================== */
 
 .container{
+    width:calc(100% - 230px);
+    max-width:none;
 
-    width:90%;
+    margin-left:230px;
+    padding:30px 35px;
 
-    max-width:1250px;
-
-    margin:35px auto 70px;
+    box-sizing:border-box;
 
 }
 
@@ -163,62 +164,60 @@ body{
 ===================================== */
 
 .menu-nav{
+    position:fixed;
+    left:0;
+    top:0;
+    width:230px;
+    height:100vh;
 
-    display:grid;
+    background:#ffffff;
+    border-right:1px solid #d5e0ea;
 
-    grid-template-columns:repeat(4,1fr);
+    display:flex;
+    flex-direction:column;
 
-    gap:12px;
+    padding:25px 15px;
+    box-sizing:border-box;
 
-    margin-bottom:30px;
-
+    z-index:1000;
 }
 
+/* Tombol menu */
 
 .menu-btn{
+    width:100%;
+    padding:14px 16px;
 
-    background:#243447;
+    margin-bottom:8px;
 
-    color:var(--biru-tua);
+    border:none;
+    border-radius:10px;
 
-    border:2px solid var(--border);
+    background:transparent;
+    color:#243447;
 
-    border-radius:12px;
-
-    padding:14px 18px;
-
+    text-align:left;
     font-size:15px;
-
-    font-weight:bold;
+    font-weight:600;
 
     cursor:pointer;
 
-    transition:.2s;
-
+    transition:0.2s;
 }
 
+/* Saat mouse diarahkan */
 
 .menu-btn:hover{
-
-    border-color:var(--biru);
-
-    color:var(--biru);
-
-    transform:translateY(-1px);
-
+    background:#e8f2fb;
+    color:#2166a5;
 }
 
+/* Menu aktif */
 
 .menu-btn.active{
-
-    background:var(--biru-tua);
-
-    color:#fff;
-
-    border-color:var(--biru-tua);
-
+    background:#2166a5;
+    color:#ffffff;
 }
-
 
 /* =====================================
    MENU CONTENT
