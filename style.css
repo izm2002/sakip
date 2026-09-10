@@ -182,7 +182,6 @@ body{
 .menu-btn{
     width:100%;
     padding:14px 16px;
-
     margin-bottom:8px;
 
     border:none;
@@ -196,39 +195,17 @@ body{
     font-weight:600;
 
     cursor:pointer;
-
     transition:0.2s;
 }
-
-/* Saat mouse diarahkan */
 
 .menu-btn:hover{
     background:#e8f2fb;
     color:#2166a5;
 }
 
-/* Menu aktif */
-
 .menu-btn.active{
     background:#2166a5;
     color:#ffffff;
-}
-
-/* =====================================
-   MENU CONTENT
-===================================== */
-
-.menu-content{
-
-    display:none;
-
-}
-
-
-.menu-content.active{
-
-    display:block;
-
 }
 
 
