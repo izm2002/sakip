@@ -767,7 +767,16 @@ body{
     color:var(--teks-sekunder);
     font-size:13px;
 }
-
+/* FORCE PIE CHART */
+.evaluasi-ringkasan-grid .evaluasi-pie{
+    width:160px !important;
+    height:160px !important;
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    border-radius:50% !important;
+    background:var(--biru) !important;
+}
 
 /* =====================================
    HALAMAN PERENCANAAN
