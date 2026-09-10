@@ -1,0 +1,1826 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PRIMA - Portal Akuntabilitas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="header">
+
+    <div class="header-overlay">
+
+        <div class="header-content">
+
+            <div class="header-text">
+
+                <span class="header-label">
+                    PORTAL RENCANA IMPLEMENTASI DAN MONITORING AKUNTABILITAS
+                </span>
+
+                <h1>PRIMA</h1>
+
+                <p class="header-description">
+                    Portal Rencana Implementasi dan Monitoring Akuntabilitas
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main class="container">
+
+
+<!-- =====================================
+     MENU NAVIGASI
+===================================== -->
+
+<nav class="menu-nav">
+
+    <button class="menu-btn active"
+            data-menu="beranda">
+
+        🏠 Beranda
+
+    </button>
+
+
+    <button class="menu-btn"
+            data-menu="perencanaan">
+
+        📁 Perencanaan
+
+    </button>
+
+
+    <button class="menu-btn"
+            data-menu="pelaksanaan">
+
+        📊 Pelaksanaan
+
+    </button>
+
+
+    <button class="menu-btn"
+            data-menu="evaluasi">
+
+        📋 Evaluasi
+
+    </button>
+
+</nav>
+
+
+
+<!-- ==================================================
+     MENU BERANDA
+================================================== -->
+
+<section id="berandaSection"
+         class="menu-content active">
+
+
+    <div class="section-title">
+
+        <h2>
+            Beranda
+        </h2>
+
+        <p>
+            Ringkasan perencanaan, pelaksanaan, dan evaluasi
+            akuntabilitas kinerja.
+        </p>
+
+    </div>
+
+
+
+    <!-- =============================================
+         1. PERENCANAAN
+    ============================================== -->
+
+    <section class="beranda-section">
+
+        <div class="beranda-section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    PERENCANAAN
+                </p>
+
+                <h2>
+                    Perencanaan Kinerja
+                </h2>
+
+                <p>
+                    Ringkasan capaian Renstra dan Perjanjian Kinerja.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="beranda-planning-grid">
+
+
+            <!-- CAPAIAN RENSTRA -->
+
+            <div class="beranda-card">
+
+                <div class="beranda-card-heading">
+
+                    <div>
+
+                        <span class="beranda-card-icon">
+                            📈
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Capaian Renstra
+                            </h3>
+
+                            <p>
+                                Capaian IKU terhadap target Renstra
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="iku-capaian-list"
+                     id="capaianRenstraList">
+
+                    <!-- Diisi oleh JavaScript -->
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PERJANJIAN KINERJA -->
+
+            <div class="beranda-card">
+
+                <div class="beranda-card-heading">
+
+                    <div>
+
+                        <span class="beranda-card-icon">
+                            📝
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Perjanjian Kinerja
+                            </h3>
+
+                            <p>
+                                Capaian IKU terhadap target Perjanjian Kinerja
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="iku-capaian-list"
+                     id="perjanjianKinerjaList">
+
+                    <!-- Diisi oleh JavaScript -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =============================================
+         2. CAPAIAN KINERJA
+    ============================================== -->
+
+    <section class="beranda-section">
+
+        <div class="beranda-section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    PELAKSANAAN
+                </p>
+
+                <h2>
+                    Capaian Kinerja
+                </h2>
+
+                <p>
+                    Ringkasan capaian kinerja setiap triwulan.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="capaian-kinerja-grid">
+
+
+            <!-- TRIWULAN I -->
+
+            <div class="capaian-card">
+
+                <div class="capaian-card-icon">
+                    I
+                </div>
+
+                <h3>
+                    Triwulan I
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw1Triwulanan">
+                        -
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw1Tahunan">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRIWULAN II -->
+
+            <div class="capaian-card">
+
+                <div class="capaian-card-icon">
+                    II
+                </div>
+
+                <h3>
+                    Triwulan II
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw2Triwulanan">
+                        -
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw2Tahunan">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRIWULAN III -->
+
+            <div class="capaian-card">
+
+                <div class="capaian-card-icon">
+                    III
+                </div>
+
+                <h3>
+                    Triwulan III
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw3Triwulanan">
+                        -
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw3Tahunan">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRIWULAN IV -->
+
+            <div class="capaian-card">
+
+                <div class="capaian-card-icon">
+                    IV
+                </div>
+
+                <h3>
+                    Triwulan IV
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw4Triwulanan">
+                        -
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw4Tahunan">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =============================================
+         3. EVALUASI
+    ============================================== -->
+
+    <section class="beranda-section">
+
+        <div class="beranda-section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    EVALUASI
+                </p>
+
+                <h2>
+                    Ringkasan Evaluasi
+                </h2>
+
+                <p>
+                    Ringkasan pemenuhan permintaan dokumen evaluasi.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="evaluasi-ringkasan-grid">
+
+
+            <!-- PERMINDOK TAHUN SEKARANG -->
+
+            <div class="evaluasi-summary-card">
+
+                <div class="evaluasi-summary-heading">
+
+                    <div>
+
+                        <span class="evaluasi-summary-icon">
+                            📄
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Permindok Tahun Sekarang
+                            </h3>
+
+                            <p>
+                                Pemenuhan dokumen evaluasi tahun berjalan
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evaluasi-pie-wrapper">
+
+                    <div class="evaluasi-pie"
+                         id="pieTahunSekarang">
+
+                        <div class="evaluasi-pie-center">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Lengkap
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PERMINDOK TAHUN BERJALAN -->
+
+            <div class="evaluasi-summary-card">
+
+                <div class="evaluasi-summary-heading">
+
+                    <div>
+
+                        <span class="evaluasi-summary-icon">
+                            📋
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Permindok Tahun Berjalan
+                            </h3>
+
+                            <p>
+                                Pemenuhan dokumen evaluasi tahun berjalan
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evaluasi-pie-wrapper">
+
+                    <div class="evaluasi-pie"
+                         id="pieTahunBerjalan">
+
+                        <div class="evaluasi-pie-center">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Lengkap
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     MENU PERENCANAAN
+================================================== -->
+
+<section id="perencanaanSection"
+         class="menu-content">
+
+
+    <div class="planning-header">
+
+        <h2>
+            Perencanaan SAKIP
+        </h2>
+
+        <p>
+            Akses dokumen perencanaan dan kinerja organisasi.
+        </p>
+
+    </div>
+
+
+
+    <div class="planning-container">
+
+
+        <!-- NOTULA REVIU TARGET RENSTRA -->
+
+        <div class="planning-card">
+
+            <h3>
+                📄 Notula Reviu Target Renstra
+            </h3>
+
+            <a href="https://drive.google.com/drive/folders/1l4J7HdLckIX4bykx3TeAID8fUvpSDtuN?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 1
+
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1McQq2eO35wxt13rQ-Rn167uSC4eF65VL?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 2
+
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1g3Sl49z0On9-u878OPpin3QKuD8s64zy?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 3
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NOTULA CAPAIAN TARGET RENSTRA -->
+
+        <div class="planning-card">
+
+            <h3>
+                📈 Notula Capaian Target Renstra
+            </h3>
+
+            <a href="https://drive.google.com/drive/folders/19oyUXDnQskm99muan-l6tTPfcwvli91U?usp=sharing"
+               target="_blank">
+
+                📁 Buka Folder Capaian Target Renstra
+
+            </a>
+
+            <a href="https://docs.google.com/document/d/1sxsj4qITZAK4YBQtwD599eNmJ-UhtYvi/edit?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 1
+
+            </a>
+
+            <a href="https://docs.google.com/document/d/1sxsj4qITZAK4YBQtwD599eNmJ-UhtYvi/edit?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 2
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NOTULA PERJANJIAN KINERJA -->
+
+        <div class="planning-card">
+
+            <h3>
+                📝 Notula Perjanjian Kinerja
+            </h3>
+
+            <a href="https://docs.google.com/document/d/1sxsj4qITZAK4YBQtwD599eNmJ-UhtYvi/edit?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 1
+
+            </a>
+
+            <a href="https://docs.google.com/document/d/1sxsj4qITZAK4YBQtwD599eNmJ-UhtYvi/edit?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 2
+
+            </a>
+
+            <a href="https://docs.google.com/document/d/1sxsj4qITZAK4YBQtwD599eNmJ-UhtYvi/edit?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen 3
+
+            </a>
+
+        </div>
+
+
+
+        <!-- LAPORAN KINERJA -->
+
+        <div class="planning-card">
+
+            <h3>
+                📚 Laporan Kinerja 2025
+            </h3>
+
+            <a href="https://docs.google.com/document/d/1sxsj4qITZAK4YBQtwD599eNmJ-UhtYvi/edit?usp=sharing"
+               target="_blank">
+
+                📄 Buka Dokumen
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MENU PELAKSANAAN / MONITORING
+================================================== -->
+
+<section id="pelaksanaanSection"
+         class="menu-content">
+
+
+    <!-- =================================
+         PILIH PERIODE
+    ================================== -->
+
+    <section class="periode-section">
+
+        <div class="section-title">
+
+            <h2>
+                Pilih Periode Monitoring
+            </h2>
+
+            <p>
+                Pilih tahun dan triwulan untuk menampilkan
+                perkembangan kelengkapan dokumen AKIP.
+            </p>
+
+        </div>
+
+
+        <div class="periode-control">
+
+
+            <div class="tahun-control">
+
+                <label for="tahunSelect">
+                    Tahun
+                </label>
+
+                <select id="tahunSelect">
+
+                    <option value="2026">
+                        2026
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="triwulan-control">
+
+                <label>
+                    Triwulan
+                </label>
+
+                <div class="triwulan-buttons">
+
+                    <button class="triwulan-button active"
+                            data-triwulan="1">
+
+                        Triwulan I
+
+                    </button>
+
+                    <button class="triwulan-button"
+                            data-triwulan="2">
+
+                        Triwulan II
+
+                    </button>
+
+                    <button class="triwulan-button"
+                            data-triwulan="3">
+
+                        Triwulan III
+
+                    </button>
+
+                    <button class="triwulan-button"
+                            data-triwulan="4">
+
+                        Triwulan IV
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="periode-active"
+             id="periodeInfo">
+
+            Monitoring Triwulan I Tahun 2026
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         PROGRES DAN COUNTDOWN
+    ================================== -->
+
+    <section class="dashboard-section">
+
+
+        <!-- KARTU PROGRES -->
+
+        <div class="progress-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <p class="card-label">
+                        PROGRES DOKUMEN
+                    </p>
+
+                    <h2>
+                        Kelengkapan Bukti Dukung
+                    </h2>
+
+                    <p class="progress-description"
+                       id="statusProgress">
+
+                        Sedang memuat data...
+
+                    </p>
+
+                </div>
+
+
+                <button class="refresh-button"
+                        id="refreshButton">
+
+                    ↻ Perbarui Data
+
+                </button>
+
+            </div>
+
+
+
+            <div class="progress-content">
+
+
+                <div class="donut-wrapper">
+
+                    <div class="donut-chart"
+                         id="donutChart">
+
+                        <div class="donut-center">
+
+                            <strong id="persentaseDokumen">
+                                0%
+                            </strong>
+
+                            <span>
+                                Lengkap
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="progress-information">
+
+                    <div class="progress-number">
+
+                        <strong id="dokumenTersedia">
+                            0
+                        </strong>
+
+                        <span>
+                            dari
+                        </span>
+
+                        <strong id="totalDokumen">
+                            51
+                        </strong>
+
+                        <span>
+                            dokumen tersedia
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar-container">
+
+                        <div class="progress-bar"
+                             id="progressDokumen">
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-iku-info">
+
+                        <div class="iku-progress-item">
+
+                            <span>
+                                IKU Lengkap
+                            </span>
+
+                            <strong>
+
+                                <span id="ikuLengkap">
+                                    0
+                                </span>
+
+                                /
+
+                                <span id="totalIKU">
+                                    17
+                                </span>
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="iku-progress-item">
+
+                            <span>
+                                Persentase IKU
+                            </span>
+
+                            <strong id="persentaseIKU">
+                                0%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COUNTDOWN -->
+
+        <aside class="countdown-card">
+
+            <div class="countdown-heading">
+
+                <span class="countdown-icon">
+                    ⏳
+                </span>
+
+                <div>
+
+                    <p>
+                        BATAS PENGUMPULAN
+                    </p>
+
+                    <h2>
+                        Countdown Deadline
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="deadline-date"
+               id="deadlineDate">
+
+                Deadline sedang dimuat...
+
+            </p>
+
+
+            <p class="deadline-status"
+               id="deadlineStatus">
+
+                Menghitung waktu tersisa...
+
+            </p>
+
+
+
+            <div class="countdown-timer">
+
+
+                <div class="time-box">
+
+                    <strong id="countdownDays">
+                        00
+                    </strong>
+
+                    <span>
+                        Hari
+                    </span>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <strong id="countdownHours">
+                        00
+                    </strong>
+
+                    <span>
+                        Jam
+                    </span>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <strong id="countdownMinutes">
+                        00
+                    </strong>
+
+                    <span>
+                        Menit
+                    </span>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <strong id="countdownSeconds">
+                        00
+                    </strong>
+
+                    <span>
+                        Detik
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DAFTAR PJ -->
+
+            <div class="pj-monitoring">
+
+                <div class="pj-heading">
+
+                    <div>
+
+                        <p>
+                            TINDAK LANJUT
+                        </p>
+
+                        <h3>
+                            PJ dengan Dokumen
+                            Belum Lengkap
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pj-list"
+                     id="pjList">
+
+                    <p class="loading">
+                        Sedang memuat data PJ...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+
+    <!-- =================================
+         RINGKASAN STATUS
+    ================================== -->
+
+    <section class="summary-section">
+
+
+        <div class="summary-card summary-lengkap">
+
+            <div class="summary-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <span>
+                    IKU Lengkap
+                </span>
+
+                <strong id="summaryLengkap">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="summary-card summary-sebagian">
+
+            <div class="summary-icon">
+                !
+            </div>
+
+            <div>
+
+                <span>
+                    IKU Belum Lengkap
+                </span>
+
+                <strong id="summarySebagian">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="summary-card summary-kosong">
+
+            <div class="summary-icon">
+                ×
+            </div>
+
+            <div>
+
+                <span>
+                    IKU Belum Ada Dokumen
+                </span>
+
+                <strong id="summaryKosong">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         DAFTAR 17 IKU
+    ================================== -->
+
+    <section class="indikator-section">
+
+        <div class="indikator-heading">
+
+            <div>
+
+                <p class="section-label">
+                    STATUS DOKUMEN
+                </p>
+
+                <h2>
+                    Monitoring Indikator Kinerja Utama
+                </h2>
+
+                <p>
+                    Setiap IKU diperiksa berdasarkan
+                    ketersediaan notula, bukti dukung
+                    kinerja, dan bukti tindak lanjut.
+                </p>
+
+            </div>
+
+
+            <div class="status-legend">
+
+                <span>
+
+                    <i class="legend-blue"></i>
+                    Lengkap
+
+                </span>
+
+                <span>
+
+                    <i class="legend-yellow"></i>
+                    Sebagian
+
+                </span>
+
+                <span>
+
+                    <i class="legend-red"></i>
+                    Kosong
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="indikator-grid"
+             id="indikatorList">
+
+            <p class="loading">
+                Sedang memuat 17 indikator IKU...
+            </p>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     MENU EVALUASI
+================================================== -->
+
+<section id="evaluasiSection"
+         class="menu-content">
+
+
+    <div class="section-title">
+
+        <h2>
+            Evaluasi AKIP
+        </h2>
+
+        <p>
+            Daftar permintaan dokumen dan tindak lanjut
+            evaluasi akuntabilitas kinerja.
+        </p>
+
+    </div>
+
+
+
+    <!-- =============================================
+         SUBMENU EVALUASI
+    ============================================== -->
+
+    <div class="evaluasi-submenu">
+
+
+        <button class="evaluasi-tab active"
+                data-evaluasi="tindakLanjut">
+
+            ✓ Permintaan Dokumen Tindak Lanjut
+            Tahun Sebelumnya
+
+        </button>
+
+
+        <button class="evaluasi-tab"
+                data-evaluasi="tahun2025">
+
+            📋 Permintaan Dokumen Tahun 2025
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =============================================
+         TINDAK LANJUT TAHUN SEBELUMNYA
+    ============================================== -->
+
+    <section id="tindakLanjutEvaluasi"
+             class="evaluasi-content active">
+
+
+        <div class="evaluasi-list-card">
+
+            <div class="evaluasi-list-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        TINDAK LANJUT
+                    </p>
+
+                    <h2>
+                        Permintaan Dokumen Tindak Lanjut
+                        Tahun Sebelumnya
+                    </h2>
+
+                    <p>
+                        Daftar tindak lanjut hasil evaluasi
+                        AKIP yang telah dipenuhi.
+                    </p>
+
+                </div>
+
+
+                <div class="evaluasi-total">
+
+                    <strong>
+                        11
+                    </strong>
+
+                    <span>
+                        Dokumen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="evaluasi-item-list">
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        1
+                    </span>
+
+                    <p>
+                        Meningkatkan kualitas perencanaan strategis dengan menyempurnakan notulen penetapan target Renstra melalui penambahan dasar hitung yang sistematis, basis data pendukung yang valid, dan alasan logis yang komprehensif untuk setiap target.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        2
+                    </span>
+
+                    <p>
+                        Memperbaiki struktur tim pengelola kinerja dengan merevisi SK Tim SAKIP agar memuat seluruh penanggung jawab IKU secara lengkap dan mengakomodir tugas monitoring capaian kinerja triwulanan serta menengah dengan pembagian peran yang jelas sehingga dapat monitoring kinerja organisasi.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        3
+                    </span>
+
+                    <p>
+                        Memperbaiki mekanisme pengukuran kinerja dengan menyempurnakan notula TW I 2026 melalui penambahan dasar hitung yang sistematis dan basis data yang valid untuk setiap indikator yang memiliki target dan realisasi.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        4
+                    </span>
+
+                    <p>
+                        Memperbaiki validitas data capaian kinerja TW I 2026 yang memungkinkan penelusuran hingga ke bukti dukung serta memastikan kesesuaian dengan basis data yang telah ditetapkan sehingga dapat meningkatkan kredibilitas dan akuntabilitas pengukuran kinerja organisasi.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        5
+                    </span>
+
+                    <p>
+                        Memperbaiki sistem dokumentasi tindak lanjut dengan mengembangkan database bukti pelaksanaan RTL yang komprehensif berupa dokumentasi foto kegiatan, laporan progress, dan bukti output kegiatan yang terstruktur sehingga dapat memastikan pelaksanaan tindak lanjut dapat diverifikasi.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        6
+                    </span>
+
+                    <p>
+                        Memanfaatkan hasil pengukuran kinerja 2026 sebagai dasar pertimbangan untuk pemberian reward dan punishment dengan menyusun mekanisme yang komprehensif, menetapkan kriteria kinerja yang jelas, melibatkan seluruh pegawai dalam penilaian, dan memastikan legalisasi pimpinan sehingga dapat meningkatkan motivasi dan komitmen pegawai dalam mencapai target kinerja.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        7
+                    </span>
+
+                    <p>
+                        Memperbaiki kualitas dokumentasi evaluasi kinerja dengan merevisi notula TW II, III dan IV 2025 agar memuat analisis capaian yang akurat, kendala yang komprehensif, solusi yang terstruktur, rencana tindak lanjut yang spesifik, penetapan PIC yang jelas, dan batas waktu yang tegas sesuai pedoman.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        8
+                    </span>
+
+                    <p>
+                        Meningkatkan kualitas pelaporan kinerja dengan menyempurnakan Lakin 2025 agar memenuhi seluruh kriteria dan persyaratan yang ditetapkan Biro Perencanaan melalui gap analysis, revisi sistematis, dan implementasi template standar sehingga laporan kinerja dapat menjadi instrumen akuntabilitas yang efektif dan informatif.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        9
+                    </span>
+
+                    <p>
+                        Meningkatkan kualitas evaluasi kinerja dengan menyempurnakan notula TW IV 2025 melalui penambahan analisis penyesuaian anggaran yang detail, matriks hubungan kinerja anggaran, dan dokumentasi realokasi anggaran yang dilakukan sehingga dapat memastikan sinergi antara pengelolaan anggaran dan pencapaian kinerja organisasi.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        10
+                    </span>
+
+                    <p>
+                        Memanfaatkan hasil pengukuran kinerja 2025 sebagai dasar pertimbangan untuk pemberian reward and punishment dengan menyusun mekanisme yang komprehensif, menetapkan kriteria kinerja yang jelas, melibatkan seluruh pegawai dalam penilaian, dan memastikan legalisasi pimpinan sehingga dapat meningkatkan motivasi dan komitmen pegawai dalam mencapai target kinerja.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+
+                <div class="evaluasi-item">
+
+                    <span class="evaluasi-item-number">
+                        11
+                    </span>
+
+                    <p>
+                        Meningkatkan kualitas evaluasi AKIP dengan memenuhi semua permintaan kelengkapan dokumen evaluasi 2026 melalui penyusunan checklist dokumen yang sistematis, penetapan timeline yang jelas, dan implementasi sistem monitoring progres sehingga dapat memastikan pemenuhan dokumen evaluasi AKIP 2026 secara lengkap dan tepat waktu sesuai ketentuan.
+                    </p>
+
+                    <span class="evaluasi-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =============================================
+         PERMINTAAN DOKUMEN TAHUN 2025
+    ============================================== -->
+
+    <section id="tahun2025Evaluasi"
+             class="evaluasi-content">
+
+
+        <div class="evaluasi-list-card">
+
+            <div class="evaluasi-list-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        PERMINTAAN DOKUMEN
+                    </p>
+
+                    <h2>
+                        Permintaan Dokumen Tahun 2025
+                    </h2>
+
+                    <p>
+                        Daftar dokumen yang diperlukan untuk
+                        evaluasi AKIP tahun 2025.
+                    </p>
+
+                </div>
+
+
+                <div class="evaluasi-total">
+
+                    <strong>
+                        23
+                    </strong>
+
+                    <span>
+                        Dokumen
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="evaluasi-item-list">
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">1</span>
+                    <p>Renstra 2025-2029</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">2</span>
+                    <p>Undangan, Daftar Hadir dan Notulen Monitoring Capaian Target Renstra Selama Tahun 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">3</span>
+                    <p>Undangan, Daftar Hadir dan Notulen Pembahasan Hasil Identifikasi Ketercapaian Target Akhir Renstra 2020-2024.</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">4</span>
+                    <p>Undangan, Daftar Hadir dan Notulen Rapat Penetapan Target Renstra 2025-2029</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">5</span>
+                    <p>Perjanjian Kinerja 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">6</span>
+                    <p>Undangan, Daftar Hadir dan Notulen Rapat Pembahasan Penetapan Target PK 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">7</span>
+                    <p>Kertas Kerja Dasar Hitung dan KAK/Tabel Revisi POK dari BOS TW I 2025 (Kondisi Revisi Terakhir TW I 2025)</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">8</span>
+                    <p>SK Tim SAKIP 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">9</span>
+                    <p>SOP pengumpulan data kinerja terbaru (khusus BPS Provinsi)</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">10</span>
+                    <p>Undangan, daftar hadir, notulen rapat kinerja Triwulan I 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">11</span>
+                    <p>Dokumen Sumber/Pendukung FRA Triwulan I Tahun 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">12</span>
+                    <p>Bukti pelaksanaan tindak lanjut/rencana aksi sesuai dengan notulen rapat capaian kinerja Triwulan 1 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">13</span>
+                    <p>SKP bulan Maret Tahun 2025 berupa SKP 1 Ketua Tim dan 2 Anggota Tim yang telah divalidasi</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">14</span>
+                    <p>Mekanisme, kertas kerja penilaian/implementasi, dan bukti reward and punishment Triwulan I 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">15</span>
+                    <p>Undangan, daftar hadir, notulen rapat kinerja Triwulan II 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">16</span>
+                    <p>Undangan, daftar hadir, notulen rapat kinerja Triwulan III 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">17</span>
+                    <p>Undangan, daftar hadir, notulen rapat kinerja Triwulan IV 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">18</span>
+                    <p>Dokumen Sumber/Pendukung FRA Triwulan IV Tahun 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">19</span>
+                    <p>Bukti pelaksanaan tindak lanjut/rencana aksi sesuai dengan notulen rapat capaian kinerja Triwulan IV 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">20</span>
+                    <p>Mekanisme, kertas kerja penilaian/implementasi, dan bukti reward and punishment Tahun 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">21</span>
+                    <p>Laporan Kinerja 2024</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">22</span>
+                    <p>Sertifikat Penghargaan dan Bukti Penghargaan Lainnya dalam kurun waktu Juli 2024 s.d. Juni 2025</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+                <div class="evaluasi-item">
+                    <span class="evaluasi-item-number">23</span>
+                    <p>Link Google Drive Unit Kerja memuat semua rincian permindok 1-22, yang dituliskan pada satu halaman</p>
+                    <span class="evaluasi-check">✓</span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+        PRIMA — Portal Rencana,
+        Implementasi, dan Monitoring
+        Akuntabilitas
+    </p>
+
+    <p>
+        Sistem Informasi Akuntabilitas
+        Kinerja BPS Kota Jakarta Barat
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+```

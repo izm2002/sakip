@@ -1,0 +1,2588 @@
+```css
+/* =====================================
+   VARIABEL WARNA
+===================================== */
+
+:root{
+
+    --biru-tua:#123b67;
+    --biru:#2166a5;
+    --biru-muda:#e8f2fb;
+
+    --kuning:#e5a72d;
+    --kuning-muda:#fff5d9;
+
+    --merah:#cf4b4b;
+    --merah-muda:#fff0f0;
+
+    --hijau:#2d8a62;
+
+    --teks:#243447;
+    --teks-sekunder:#66778a;
+
+    --latar:#f3f7fb;
+    --putih:#ffffff;
+    --border:#dce5ee;
+
+}
+
+
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:var(--latar);
+
+    color:var(--teks);
+
+    line-height:1.6;
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header{
+
+    min-height:245px;
+
+    background-image:url("header2.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.header-overlay{
+
+    min-height:245px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(18,59,103,.94),
+        rgba(18,59,103,.78),
+        rgba(18,59,103,.45)
+    );
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+.header-content{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:auto;
+
+}
+
+
+.header-text{
+
+    color:#fff;
+
+    max-width:750px;
+
+}
+
+
+.header-label{
+
+    display:inline-block;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+    opacity:.9;
+
+}
+
+
+.header-text h1{
+
+    font-size:52px;
+
+    line-height:1;
+
+    margin-bottom:10px;
+
+}
+
+
+.header-description{
+
+    font-size:17px;
+
+    opacity:.95;
+
+}
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:35px auto 70px;
+
+}
+
+
+/* =====================================
+   MENU NAVIGASI
+===================================== */
+
+.menu-nav{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+
+.menu-btn{
+
+    background:#fff;
+
+    color:var(--biru-tua);
+
+    border:2px solid var(--border);
+
+    border-radius:12px;
+
+    padding:14px 18px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+.menu-btn:hover{
+
+    border-color:var(--biru);
+
+    color:var(--biru);
+
+    transform:translateY(-1px);
+
+}
+
+
+.menu-btn.active{
+
+    background:var(--biru-tua);
+
+    color:#fff;
+
+    border-color:var(--biru-tua);
+
+}
+
+
+/* =====================================
+   MENU CONTENT
+===================================== */
+
+.menu-content{
+
+    display:none;
+
+}
+
+
+.menu-content.active{
+
+    display:block;
+
+}
+
+
+/* =====================================
+   JUDUL SECTION
+===================================== */
+
+.section-title{
+
+    margin-bottom:25px;
+
+}
+
+
+.section-title h2{
+
+    color:var(--biru-tua);
+
+    font-size:28px;
+
+    margin-bottom:6px;
+
+}
+
+
+.section-title p{
+
+    color:var(--teks-sekunder);
+
+}
+
+
+/* =====================================
+   LABEL SECTION
+===================================== */
+
+.section-label{
+
+    color:var(--biru);
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:4px;
+
+}
+
+
+/* =====================================
+   BERANDA
+===================================== */
+
+.beranda-section{
+
+    margin-bottom:40px;
+
+}
+
+
+.beranda-section-heading{
+
+    margin-bottom:18px;
+
+}
+
+
+.beranda-section-heading h2{
+
+    color:var(--biru-tua);
+
+    font-size:23px;
+
+    margin-bottom:4px;
+
+}
+
+
+.beranda-section-heading p{
+
+    color:var(--teks-sekunder);
+
+}
+
+
+/* =====================================
+   CARD BERANDA
+===================================== */
+
+.beranda-planning-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+.beranda-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+    border-top:5px solid var(--biru);
+
+}
+
+
+.beranda-card-heading{
+
+    margin-bottom:18px;
+
+}
+
+
+.beranda-card-heading > div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+}
+
+
+.beranda-card-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:12px;
+
+    background:var(--biru-muda);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:25px;
+
+    flex-shrink:0;
+
+}
+
+
+.beranda-card h3{
+
+    color:var(--biru-tua);
+
+    font-size:19px;
+
+}
+
+
+.beranda-card p{
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+}
+
+
+/* =====================================
+   LIST CAPAIAN IKU
+===================================== */
+
+.iku-capaian-list{
+
+    max-height:390px;
+
+    overflow-y:auto;
+
+    padding-right:5px;
+
+}
+
+
+.iku-capaian-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding:9px 11px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+.iku-capaian-item:last-child{
+
+    border-bottom:none;
+
+}
+
+
+.iku-capaian-name{
+
+    font-size:13px;
+
+    color:var(--teks);
+
+}
+
+
+.iku-capaian-value{
+
+    color:var(--biru);
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+}
+
+
+/* =====================================
+   CAPAIAN KINERJA
+===================================== */
+
+.capaian-kinerja-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+
+.capaian-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+    border-top:4px solid var(--biru);
+
+}
+
+
+.capaian-card-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--biru-muda);
+
+    color:var(--biru-tua);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
+
+.capaian-card h3{
+
+    color:var(--biru-tua);
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+
+.capaian-metric{
+
+    padding:10px 0;
+
+    border-top:1px solid var(--border);
+
+}
+
+
+.capaian-metric span{
+
+    display:block;
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+    margin-bottom:4px;
+
+}
+
+
+.capaian-metric strong{
+
+    color:var(--biru);
+
+    font-size:20px;
+
+}
+
+
+/* =====================================
+   RINGKASAN EVALUASI BERANDA
+===================================== */
+
+.evaluasi-ringkasan-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+.evaluasi-summary-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+    border-top:5px solid var(--hijau);
+
+}
+
+
+.evaluasi-summary-heading{
+
+    margin-bottom:18px;
+
+}
+
+
+.evaluasi-summary-heading > div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+}
+
+
+.evaluasi-summary-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:12px;
+
+    background:#e8f5ef;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+}
+
+
+.evaluasi-summary-card h3{
+
+    color:var(--biru-tua);
+
+    font-size:18px;
+
+}
+
+
+.evaluasi-summary-card p{
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+}
+
+
+/* =====================================
+   PIE CHART EVALUASI
+===================================== */
+
+.evaluasi-pie-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:10px 0 5px;
+
+}
+
+
+.evaluasi-pie{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    background:conic-gradient(
+        var(--hijau) 0% 100%
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.evaluasi-pie-center{
+
+    width:118px;
+
+    height:118px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.evaluasi-pie-center strong{
+
+    color:var(--hijau);
+
+    font-size:25px;
+
+}
+
+
+.evaluasi-pie-center span{
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+}
+
+
+/* =====================================
+   HALAMAN PERENCANAAN
+===================================== */
+
+.planning-header{
+
+    margin-bottom:25px;
+
+}
+
+
+.planning-header h2{
+
+    color:var(--biru-tua);
+
+    font-size:28px;
+
+    margin-bottom:6px;
+
+}
+
+
+.planning-header p{
+
+    color:var(--teks-sekunder);
+
+}
+
+
+.planning-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+.planning-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+    border-top:5px solid var(--biru);
+
+}
+
+
+.planning-card h3{
+
+    color:var(--biru-tua);
+
+    margin-bottom:18px;
+
+    font-size:19px;
+
+}
+
+
+.planning-card a{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:var(--biru-tua);
+
+    color:#fff;
+
+    padding:10px 14px;
+
+    border-radius:8px;
+
+    margin-bottom:10px;
+
+    text-align:center;
+
+    transition:.2s;
+
+    font-size:14px;
+
+}
+
+
+.planning-card a:hover{
+
+    background:var(--biru);
+
+}
+
+
+/* =====================================
+   PERIODE MONITORING / PELAKSANAAN
+===================================== */
+
+.periode-section{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+    margin-bottom:22px;
+
+}
+
+
+.periode-control{
+
+    display:grid;
+
+    grid-template-columns:180px 1fr;
+
+    gap:25px;
+
+    align-items:end;
+
+}
+
+
+.tahun-control label,
+.triwulan-control label{
+
+    display:block;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    margin-bottom:7px;
+
+    color:var(--teks);
+
+}
+
+
+#tahunSelect{
+
+    width:100%;
+
+    padding:11px 12px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    background:#fff;
+
+    font-size:14px;
+
+}
+
+
+.triwulan-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+
+.triwulan-button{
+
+    background:#fff;
+
+    color:var(--biru-tua);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    padding:10px 15px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    font-size:13px;
+
+}
+
+
+.triwulan-button:hover{
+
+    border-color:var(--biru);
+
+}
+
+
+.triwulan-button.active{
+
+    background:var(--biru);
+
+    color:#fff;
+
+    border-color:var(--biru);
+
+}
+
+
+.periode-active{
+
+    margin-top:18px;
+
+    background:var(--biru-muda);
+
+    color:var(--biru-tua);
+
+    padding:11px 15px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    font-size:14px;
+
+}
+
+
+/* =====================================
+   DASHBOARD MONITORING
+===================================== */
+
+.dashboard-section{
+
+    display:grid;
+
+    grid-template-columns:1.6fr .9fr;
+
+    gap:20px;
+
+    margin-bottom:22px;
+
+}
+
+
+.progress-card,
+.countdown-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+}
+
+
+.card-heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+    margin-bottom:25px;
+
+}
+
+
+.card-label{
+
+    color:var(--biru);
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+.card-heading h2{
+
+    color:var(--biru-tua);
+
+    font-size:22px;
+
+    margin:3px 0;
+
+}
+
+
+.progress-description{
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+}
+
+
+.refresh-button{
+
+    background:var(--biru-tua);
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:10px 14px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    white-space:nowrap;
+
+}
+
+
+.refresh-button:hover{
+
+    background:var(--biru);
+
+}
+
+
+.refresh-button:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+}
+
+
+/* =====================================
+   PROGRES DONUT
+===================================== */
+
+.progress-content{
+
+    display:grid;
+
+    grid-template-columns:200px 1fr;
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+
+.donut-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.donut-chart{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    background:conic-gradient(
+        var(--biru) 0%,
+        #e4ebf2 0%
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.donut-center{
+
+    width:115px;
+
+    height:115px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.donut-center strong{
+
+    color:var(--biru-tua);
+
+    font-size:27px;
+
+}
+
+
+.donut-center span{
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+}
+
+
+/* =====================================
+   INFORMASI PROGRES
+===================================== */
+
+.progress-number{
+
+    display:flex;
+
+    align-items:baseline;
+
+    gap:6px;
+
+    margin-bottom:13px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.progress-number strong{
+
+    color:var(--biru-tua);
+
+    font-size:24px;
+
+}
+
+
+.progress-number span{
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+}
+
+
+.progress-bar-container{
+
+    width:100%;
+
+    height:10px;
+
+    background:#e4ebf2;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+}
+
+
+.progress-bar{
+
+    height:100%;
+
+    width:0;
+
+    background:var(--biru);
+
+    border-radius:20px;
+
+    transition:width .4s ease;
+
+}
+
+
+.progress-iku-info{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+}
+
+
+.iku-progress-item{
+
+    background:var(--latar);
+
+    border-radius:10px;
+
+    padding:12px;
+
+}
+
+
+.iku-progress-item span{
+
+    display:block;
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+}
+
+
+.iku-progress-item strong{
+
+    color:var(--biru-tua);
+
+    font-size:18px;
+
+}
+
+
+/* =====================================
+   COUNTDOWN
+===================================== */
+
+.countdown-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
+}
+
+
+.countdown-icon{
+
+    width:45px;
+
+    height:45px;
+
+    background:var(--kuning-muda);
+
+    border-radius:11px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+}
+
+
+.countdown-heading p{
+
+    color:var(--kuning);
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+.countdown-heading h2{
+
+    color:var(--biru-tua);
+
+    font-size:19px;
+
+}
+
+
+.deadline-date{
+
+    color:var(--teks);
+
+    font-weight:bold;
+
+    font-size:14px;
+
+}
+
+
+.deadline-status{
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+    margin:3px 0 15px;
+
+}
+
+
+.countdown-timer{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:7px;
+
+    margin-bottom:22px;
+
+}
+
+
+.time-box{
+
+    background:var(--latar);
+
+    border-radius:8px;
+
+    text-align:center;
+
+    padding:9px 4px;
+
+}
+
+
+.time-box strong{
+
+    display:block;
+
+    color:var(--biru-tua);
+
+    font-size:19px;
+
+}
+
+
+.time-box span{
+
+    color:var(--teks-sekunder);
+
+    font-size:10px;
+
+}
+
+
+/* =====================================
+   PJ MONITORING
+===================================== */
+
+.pj-monitoring{
+
+    border-top:1px solid var(--border);
+
+    padding-top:18px;
+
+}
+
+
+.pj-heading p{
+
+    color:var(--merah);
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+.pj-heading h3{
+
+    color:var(--biru-tua);
+
+    font-size:16px;
+
+    margin-bottom:12px;
+
+}
+
+
+.pj-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+
+}
+
+
+.pj-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding:9px 11px;
+
+    background:var(--merah-muda);
+
+    border-radius:8px;
+
+    font-size:12px;
+
+}
+
+
+.pj-item-name{
+
+    font-weight:bold;
+
+    color:var(--teks);
+
+}
+
+
+.pj-item-iku{
+
+    color:var(--merah);
+
+    text-align:right;
+
+}
+
+
+.pj-empty{
+
+    background:#e8f5ef;
+
+    color:var(--hijau);
+
+    padding:10px;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+}
+
+
+/* =====================================
+   RINGKASAN STATUS
+===================================== */
+
+.summary-section{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+
+.summary-card{
+
+    background:#fff;
+
+    border-radius:13px;
+
+    padding:17px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.07);
+
+}
+
+
+.summary-icon{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+}
+
+
+.summary-card span{
+
+    display:block;
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+}
+
+
+.summary-card strong{
+
+    color:var(--biru-tua);
+
+    font-size:22px;
+
+}
+
+
+.summary-lengkap{
+
+    border-left:5px solid var(--hijau);
+
+}
+
+
+.summary-lengkap .summary-icon{
+
+    background:#e8f5ef;
+
+    color:var(--hijau);
+
+}
+
+
+.summary-sebagian{
+
+    border-left:5px solid var(--kuning);
+
+}
+
+
+.summary-sebagian .summary-icon{
+
+    background:var(--kuning-muda);
+
+    color:var(--kuning);
+
+}
+
+
+.summary-kosong{
+
+    border-left:5px solid var(--merah);
+
+}
+
+
+.summary-kosong .summary-icon{
+
+    background:var(--merah-muda);
+
+    color:var(--merah);
+
+}
+
+
+/* =====================================
+   INDIKATOR IKU
+===================================== */
+
+.indikator-section{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+}
+
+
+.indikator-heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:22px;
+
+}
+
+
+.indikator-heading h2{
+
+    color:var(--biru-tua);
+
+    font-size:23px;
+
+    margin-bottom:4px;
+
+}
+
+
+.indikator-heading p:not(.section-label){
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+}
+
+
+.status-legend{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+}
+
+
+.status-legend span{
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+}
+
+
+.status-legend i{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+}
+
+
+.legend-blue{
+
+    background:var(--biru);
+
+}
+
+
+.legend-yellow{
+
+    background:var(--kuning);
+
+}
+
+
+.legend-red{
+
+    background:var(--merah);
+
+}
+
+
+/* =====================================
+   GRID IKU
+===================================== */
+
+.indikator-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+
+/* =====================================
+   KARTU IKU
+===================================== */
+
+.iku-card{
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:20px;
+
+    background:#fff;
+
+    transition:.2s;
+
+}
+
+
+.iku-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 7px 20px rgba(25,55,85,.09);
+
+}
+
+
+.iku-card.lengkap{
+
+    border-top:4px solid var(--hijau);
+
+}
+
+
+.iku-card.sebagian{
+
+    border-top:4px solid var(--kuning);
+
+}
+
+
+.iku-card.kosong{
+
+    border-top:4px solid var(--merah);
+
+}
+
+
+/* =====================================
+   IKON IKU LEBIH BESAR
+===================================== */
+
+.iku-card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+}
+
+
+.iku-number{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--biru-tua);
+
+    font-weight:bold;
+
+    font-size:15px;
+
+}
+
+
+.iku-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    background:var(--biru-muda);
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    line-height:1;
+
+    flex-shrink:0;
+
+}
+
+
+.iku-status{
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    padding:5px 9px;
+
+    border-radius:20px;
+
+    white-space:nowrap;
+
+}
+
+
+.iku-card.lengkap .iku-status{
+
+    background:#e8f5ef;
+
+    color:var(--hijau);
+
+}
+
+
+.iku-card.sebagian .iku-status{
+
+    background:var(--kuning-muda);
+
+    color:#9b6b00;
+
+}
+
+
+.iku-card.kosong .iku-status{
+
+    background:var(--merah-muda);
+
+    color:var(--merah);
+
+}
+
+
+.iku-name{
+
+    color:var(--teks);
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    margin-bottom:8px;
+
+}
+
+
+.iku-pj{
+
+    color:var(--teks-sekunder);
+
+    font-size:12px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* =====================================
+   DOKUMEN IKU
+===================================== */
+
+.document-list{
+
+    border-top:1px solid var(--border);
+
+    border-bottom:1px solid var(--border);
+
+    margin-bottom:15px;
+
+}
+
+
+.document-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:8px 0;
+
+    font-size:12px;
+
+}
+
+
+.document-icon{
+
+    width:23px;
+
+    height:23px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+}
+
+
+.document-icon.available{
+
+    background:#e8f5ef;
+
+    color:var(--hijau);
+
+}
+
+
+.document-icon.unavailable{
+
+    background:var(--merah-muda);
+
+    color:var(--merah);
+
+}
+
+
+/* =====================================
+   TOMBOL DRIVE
+===================================== */
+
+.iku-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:7px;
+
+}
+
+
+.drive-button{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    border:1px solid var(--border);
+
+    border-radius:7px;
+
+    padding:8px 5px;
+
+    color:var(--biru-tua);
+
+    background:var(--biru-muda);
+
+    font-size:11px;
+
+    font-weight:bold;
+
+}
+
+
+.drive-button:hover{
+
+    background:var(--biru);
+
+    color:#fff;
+
+}
+
+
+.drive-button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+
+/* =====================================
+   EVALUASI
+===================================== */
+
+.evaluasi-submenu{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:22px;
+
+}
+
+
+.evaluasi-tab{
+
+    background:#fff;
+
+    color:var(--biru-tua);
+
+    border:2px solid var(--border);
+
+    border-radius:10px;
+
+    padding:11px 17px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    font-size:13px;
+
+}
+
+
+.evaluasi-tab:hover{
+
+    border-color:var(--biru);
+
+}
+
+
+.evaluasi-tab.active{
+
+    background:var(--biru-tua);
+
+    color:#fff;
+
+    border-color:var(--biru-tua);
+
+}
+
+
+.evaluasi-content{
+
+    display:none;
+
+}
+
+
+.evaluasi-content.active{
+
+    display:block;
+
+}
+
+
+.evaluasi-list-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+
+}
+
+
+.evaluasi-list-heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    margin-bottom:20px;
+
+}
+
+
+.evaluasi-list-heading h2{
+
+    color:var(--biru-tua);
+
+    font-size:22px;
+
+    margin-bottom:4px;
+
+}
+
+
+.evaluasi-list-heading p{
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+}
+
+
+.evaluasi-total{
+
+    min-width:85px;
+
+    padding:10px;
+
+    background:var(--biru-muda);
+
+    border-radius:10px;
+
+    text-align:center;
+
+}
+
+
+.evaluasi-total strong{
+
+    display:block;
+
+    color:var(--biru-tua);
+
+    font-size:22px;
+
+}
+
+
+.evaluasi-total span{
+
+    color:var(--teks-sekunder);
+
+    font-size:10px;
+
+}
+
+
+/* =====================================
+   ITEM EVALUASI
+===================================== */
+
+.evaluasi-item-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+.evaluasi-item{
+
+    display:grid;
+
+    grid-template-columns:38px 1fr 30px;
+
+    align-items:center;
+
+    gap:13px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    padding:12px 14px;
+
+    background:#fff;
+
+}
+
+
+.evaluasi-item:hover{
+
+    background:#f9fbfd;
+
+}
+
+
+.evaluasi-item-number{
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    background:var(--biru-muda);
+
+    color:var(--biru-tua);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    font-size:12px;
+
+}
+
+
+.evaluasi-item p{
+
+    color:var(--teks);
+
+    font-size:13px;
+
+    line-height:1.55;
+
+}
+
+
+.evaluasi-check{
+
+    width:27px;
+
+    height:27px;
+
+    border-radius:50%;
+
+    background:#e8f5ef;
+
+    color:var(--hijau);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    font-size:15px;
+
+}
+
+
+/* =====================================
+   LOADING
+===================================== */
+
+.loading{
+
+    color:var(--teks-sekunder);
+
+    font-size:13px;
+
+    padding:15px;
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    background:var(--biru-tua);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:25px 20px;
+
+    font-size:12px;
+
+}
+
+
+footer p{
+
+    margin:4px 0;
+
+    opacity:.9;
+
+}
+
+
+/* =====================================
+   RESPONSIVE 1050px
+===================================== */
+
+@media(max-width:1050px){
+
+    .capaian-kinerja-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .dashboard-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .indikator-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =====================================
+   RESPONSIVE 780px
+===================================== */
+
+@media(max-width:780px){
+
+    .menu-nav{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .beranda-planning-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .evaluasi-ringkasan-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .periode-control{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .progress-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .donut-wrapper{
+
+        margin-bottom:5px;
+
+    }
+
+
+    .indikator-heading{
+
+        flex-direction:column;
+
+    }
+
+
+    .summary-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .evaluasi-list-heading{
+
+        flex-direction:column;
+
+    }
+
+}
+
+
+/* =====================================
+   RESPONSIVE 560px
+===================================== */
+
+@media(max-width:560px){
+
+    .container{
+
+        width:94%;
+
+        margin-top:20px;
+
+    }
+
+
+    .header,
+    .header-overlay{
+
+        min-height:210px;
+
+    }
+
+
+    .header-text h1{
+
+        font-size:40px;
+
+    }
+
+
+    .header-label{
+
+        font-size:10px;
+
+    }
+
+
+    .header-description{
+
+        font-size:14px;
+
+    }
+
+
+    .menu-nav{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .menu-btn{
+
+        width:100%;
+
+    }
+
+
+    .capaian-kinerja-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .countdown-timer{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .progress-iku-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .iku-card-top{
+
+        align-items:flex-start;
+
+    }
+
+
+    .iku-number{
+
+        align-items:center;
+
+    }
+
+
+    .iku-icon{
+
+        width:44px;
+
+        height:44px;
+
+        font-size:27px;
+
+    }
+
+
+    .iku-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .evaluasi-item{
+
+        grid-template-columns:32px 1fr 27px;
+
+        gap:9px;
+
+        padding:10px;
+
+    }
+
+
+    .evaluasi-item p{
+
+        font-size:12px;
+
+    }
+
+}
+```
