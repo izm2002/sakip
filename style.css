@@ -162,10 +162,12 @@ body{
 .menu-nav{
     position:fixed;
     left:0;
-    top:0;
+    top:120px; /* sesuaikan dengan tinggi header */
+
     width:230px;
-    height:100vh;
-    padding:150px 15px 25px;
+    height:calc(100vh - 120px);
+
+    padding:25px 15px;
     box-sizing:border-box;
 
     background:#ffffff;
@@ -176,7 +178,6 @@ body{
 
     z-index:1000;
 }
-
 /* Tombol menu */
 
 .menu-btn{
