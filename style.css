@@ -651,74 +651,110 @@ body{
    PIE CHART EVALUASI
 ===================================== */
 
-.evaluasi-pie-wrapper{
+/* =====================================
+   PIE CHART EVALUASI
+===================================== */
+
+.evaluasi-ringkasan-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+}
+
+.evaluasi-summary-card{
+    background:#ffffff;
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:24px;
+}
+
+.evaluasi-summary-heading{
+    margin-bottom:20px;
+}
+
+.evaluasi-summary-heading > div{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.evaluasi-summary-icon{
+    width:45px;
+    height:45px;
+    border-radius:10px;
+
+    background:var(--biru-muda);
 
     display:flex;
-
+    align-items:center;
     justify-content:center;
 
-    padding:10px 0 5px;
+    font-size:24px;
+}
 
+.evaluasi-summary-heading h3{
+    margin:0;
+    color:var(--biru-tua);
+    font-size:17px;
+}
+
+.evaluasi-summary-heading p{
+    margin:5px 0 0;
+    color:var(--teks-sekunder);
+    font-size:13px;
 }
 
 
+/* PIE */
+
+.evaluasi-pie-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px 0 5px;
+}
+
 .evaluasi-pie{
-
-    width:170px;
-
-    height:170px;
+    width:160px;
+    height:160px;
 
     border-radius:50%;
 
     background:conic-gradient(
-        var(--hijau) 0% 100%
+        var(--biru) 0deg 360deg,
+        #e8eef5 360deg 360deg
     );
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
 }
 
+
+/* LINGKARAN TENGAH */
 
 .evaluasi-pie-center{
-
-    width:118px;
-
-    height:118px;
+    width:110px;
+    height:110px;
 
     border-radius:50%;
-
-    background:#fff;
+    background:#ffffff;
 
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     justify-content:center;
-
 }
-
 
 .evaluasi-pie-center strong{
-
-    color:var(--hijau);
-
+    color:var(--biru-tua);
     font-size:25px;
-
 }
 
-
 .evaluasi-pie-center span{
-
+    margin-top:4px;
     color:var(--teks-sekunder);
-
-    font-size:12px;
-
+    font-size:13px;
 }
 
 
