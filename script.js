@@ -1422,43 +1422,28 @@ function tampilkanCapaianKinerja() {
    27. BERANDA - EVALUASI
 ========================================================= */
 
+/* =========================================================
+   27. BERANDA - EVALUASI
+========================================================= */
+
 function tampilkanEvaluasiBeranda() {
 
     const pieCharts =
-        document.querySelectorAll(
-            ".evaluasi-pie"
-        );
-
+        document.querySelectorAll(".evaluasi-pie");
 
     pieCharts.forEach(function(pie) {
 
-        // Nilai saat ini
-        const nilai = 100;
-
-        // Ubah nilai persen menjadi sudut lingkaran
-        const sudut = nilai * 3.6;
-
-
-        // Membuat pie chart
         pie.style.background =
-            "conic-gradient(" +
-            "var(--biru) 0deg " + sudut + "deg," +
-            "#e8eef5 " + sudut + "deg 360deg" +
-            ")";
+            "conic-gradient(var(--biru) 0deg 360deg)";
 
 
-        // Ambil angka di tengah pie
         const angka =
             pie.querySelector(
                 ".evaluasi-pie-center strong"
             );
 
-
         if (angka) {
-
-            angka.textContent =
-                nilai + "%";
-
+            angka.textContent = "100%";
         }
 
     });
